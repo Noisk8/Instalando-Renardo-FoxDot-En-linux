@@ -19,33 +19,10 @@ case $distro in
         echo "INSTALANDO RENARDO 🦊 🦊 🦊"
         echo ""
         sudo pip3 install renardo
-
-        echo "PARA TERMINAR LA INSTALACIÓN ⚙️⚙️⚙️"
-        echo ""
-
-        echo "⚙️ ABRE SUPERCOLLIDER"
-        echo ""
-
-        echo "🛹 PEGA 'https://github.com/Qirky/FoxDotQuark.git' Y EJECUTA PARA INSTALAR LOS SAMPLES Y SINTESIS DE FOXDOT"
-        echo ""
-
-        echo "🛹 REINICIA EL LENGUAJE DE COMPILACIÓN Y EJECUTA FoxDot.start"
-        echo ""
-
-        echo "🛹 ENTRA ALA CARPETA DE FoxDot"
-        echo ""
-
-        echo "🛹 EJECUTA python3 -m FoxDot"
-        echo ""
-
-        echo "🛹 RENARDO RENARDO RENARDO"
-        echo ""
-
-        echo "🛹 PARA USAR RENARDO"
-        echo ""
-
-        echo "🛹 python3 -m renardo"
-        echo ""
+        
+echo "Para terminal la instalación ⚙️⚙️⚙️"
+        echo "Abre supercoillder ⚙️⚙️⚙️"
+        echo "Luego escribre renardo en la terminal y sigue los pasos"
         ;;
     "🛹 Ubuntu") # Comandos para Ubuntu
         echo "🦊 INICIO DE INSTALACIÓN DE FOXDOT 🦊"
@@ -79,18 +56,9 @@ case $distro in
         echo ""
         sudo apt-get install qjackctl -y
 
-        echo ""
-        echo "PARA TERMINAR LA INSTALACIÓN ⚙️⚙️⚙️"
-        echo ""
-
-        echo "⚙️ ABRE SUPERCOLLIDER"
-
-
-        echo "🛹 USAR RENARDO"
-        echo ""
-
-        echo "🛹 renardo"
-        echo ""
+    echo "Para terminal la instalación ⚙️⚙️⚙️"
+        echo "Abre supercoillder ⚙️⚙️⚙️"
+        echo "Luego escribre renardo en la terminal y sigue los pasos"
         ;;
     "🛹 Archlinux") # Comandos para ArchLinux
         echo "🦊 INICIO DE INSTALACIÓN DE RENARDO 🦊"
@@ -125,9 +93,13 @@ case $distro in
         echo "DESCARGANDO RENARDO 🦊 🦊 🦊"
         sudo pacman -S python-pipx
         pipx ensurepath
+
+        source ~/.bashrc
         pipx install renardo
 
-        echo "Ecribe renardo en la terminal ⚙️⚙️⚙️"
+        echo "Para terminal la instalación ⚙️⚙️⚙️"
+        echo "Abre supercoillder ⚙️⚙️⚙️"
+        echo "Luego escribre renardo en la terminal y sigue los pasos"
  
         ;;
 esac
