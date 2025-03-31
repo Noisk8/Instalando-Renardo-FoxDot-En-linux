@@ -89,11 +89,11 @@ case $distro in
         echo "🛹 USAR RENARDO"
         echo ""
 
-        echo "🛹 python3 -m renardo"
+        echo "🛹 renardo"
         echo ""
         ;;
     "🛹 Archlinux") # Comandos para ArchLinux
-        echo "🦊 INICIO DE INSTALACIÓN DE FOXDOT 🦊"
+        echo "🦊 INICIO DE INSTALACIÓN DE RENARDO 🦊"
 
         echo "INSTALANDO YAOURT 🖧 🖧 🖧"
         sudo pacman -S --needed base-devel git wget yajl
@@ -115,10 +115,6 @@ case $distro in
         sudo pacman -S tk
         yaourt python-setuptools
 
-        echo "DESCARGANDO FOXDOT 🦊 🦊 🦊"
-        git clone https://github.com/TheNuSan/FoxDot.git
-        cd FoxDot
-        sudo python setup.py install
 
         echo "DESCARGANDO SUPERCOLLIDER 🎹🎹🎹"
         echo "ELIGE LA OPCION 2 Y PRESIONA ENTER"
@@ -126,12 +122,12 @@ case $distro in
         echo "ELIGE LA OPCION 2 Y PRESIONA ENTER"
         yaourt supercollider
 
-        echo "TAMBIÉN INSTALAMOS RENARDO"
-        sudo pip install renardo
+        echo "DESCARGANDO RENARDO 🦊 🦊 🦊"
+        sudo pacman -S python-pipx
+        pipx ensurepath
+        pipx install renardo
 
-        echo "PARA TERMINAR LA INSTALACIÓN ⚙️⚙️⚙️"
-        echo "🛹 ABRE SUPERCOLLIDER"
-        echo "🛹 ABRE USAR RENARDO"
-        echo "🛹 python3 -m renardo"
+        echo "Ecribe renardo en la terminal ⚙️⚙️⚙️"
+ 
         ;;
 esac
